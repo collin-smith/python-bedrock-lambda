@@ -35,7 +35,7 @@ def handler(event, context):
                 ),
             )
 
-            # Process and print the response
+    # Process and print the response
     result = json.loads(response.get("body").read())
     input_tokens = result["usage"]["input_tokens"]
     output_tokens = result["usage"]["output_tokens"]
